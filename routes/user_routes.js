@@ -12,8 +12,8 @@ router.get('/creator/assets-creator/:idCreator', getAssetsByIdCreator)
 router.put('/creator/register/:id', updateProfile);
 
 // payment x402
-// router.get('/creator/assets/:id/purchase', getAssetsWithPayment);
-// router.post('/creator/assets/:id/verify', verifyAssetsPayment);
+router.get('/creator/assets/:id/purchase', getAssetsWithPayment);
+router.post('/creator/assets/:id/verify', verifyAssetsPayment);
 
 router.get('/creator/find-by-wallet/:walletAddress', getProfileByWalletAddress);
 
